@@ -1,0 +1,2 @@
+require("jmag722")
+
