@@ -7,12 +7,15 @@ vim.api.nvim_create_autocmd('PackChanged', { callback = function(ev)
 end })
 vim.pack.add({ 'https://github.com/nvim-treesitter/nvim-treesitter' })
 
-require('nvim-treesitter').install({
-    'python', 'c', 'cpp', 'bash'
-})
 require('nvim-treesitter.config').setup({
     ensure_installed = {
-        'c', 'cpp', 'lua', 'python', 'bash',
+        'bash',
+        'c',
+        'cpp',
+        'diff',
+        'gitcommit',
+        'git_rebase',
+        'python',
     },
     highlight = {
         enable = true,
