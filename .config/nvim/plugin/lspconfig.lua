@@ -9,3 +9,16 @@ vim.lsp.config('*', {
 vim.lsp.enable('pyright')
 vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = 'LSP Goto Definition' })
 
+local capabilities = require('blink.cmp').get_lsp_capabilities()
+-- Repeat this for each of your language servers
+vim.lsp.config('lua_ls', {
+     capabilities = capabilities,
+})
+
+vim.lsp.config('clangd', {
+    capabilities = capabilities,
+})
+
+vim.lsp.config('python', {
+    capabilities = capabilities,
+})
