@@ -1,6 +1,7 @@
 -- fixes cursor shapes, allows terminal app to control cursor
 -- entirely
 vim.opt.guicursor = ""
+vim.opt.guifont = "JetBrainsMonoNL Nerd Font:h12"
 
 -- absolute number on current line
 vim.opt.nu = true
@@ -41,7 +42,7 @@ vim.opt.background = "light"
 
 -- keeps at least N lines above/below cursor when scrolling
 vim.opt.scrolloff = 8
--- column permanently visible 
+-- column permanently visible
 vim.opt.signcolumn = "yes"
 
 -- how many inactive ms must pass before background events

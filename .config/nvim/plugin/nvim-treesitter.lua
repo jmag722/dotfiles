@@ -27,7 +27,7 @@ require('nvim-treesitter.config').setup({
 
 --start Treesitter when filetype is specified (so no errors when 'nvim' only)
 vim.api.nvim_create_autocmd('FileType', {
-  pattern = { 'python', 'lua', 'javascript', 'html' }, -- Add your specific filetypes here
+  pattern = { 'python', 'lua', 'javascript', 'html', 'markdown' }, -- Add your specific filetypes here
   callback = function()
     pcall(vim.treesitter.start)
   end,
